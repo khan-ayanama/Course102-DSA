@@ -23,6 +23,18 @@ int countDistinctWays(int nStairs)
     return countDistinctWays(nStairs - 1) + countDistinctWays(nStairs - 2);
 }
 
+void sayDigit(int n, string arr[])
+{
+    if (n == 0)
+        return;
+
+    int digit = n % 10;
+    n = n / 10;
+
+    sayDigit(n, arr);
+    cout << arr[digit] << endl;
+}
+
 int main()
 {
     // Printing nth fibonacci number
@@ -31,7 +43,10 @@ int main()
     // cout << ans << endl;
 
     // printing Number of ways to reach stairs nth position
-    int n = 3;
-    int ans = countDistinctWays(n);
-    cout << ans << endl;
+    // int n = 3;
+    // int ans = countDistinctWays(n);
+    // cout << ans << endl;
+
+    string arr[10] = {"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
+    sayDigit(701, arr);
 }

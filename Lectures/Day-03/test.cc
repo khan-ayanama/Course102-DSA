@@ -49,6 +49,32 @@ void swapAlternative(int *arr, int size)
     }
 }
 
+int binarySearch(int arr[], int size, int key)
+{
+
+    int start = 0;
+    int end = size - 1;
+    int mid = start + (end - start) / 2;
+
+    for (int start = 0; start < end; start++)
+    {
+        if (arr[mid] == key)
+        {
+            return start;
+        }
+        if (key > arr[mid])
+        {
+            start = mid + 1;
+        }
+        else
+        {
+            end = start - 1;
+        }
+
+        mid = start + (end - start) / 2;
+    }
+}
+
 int main()
 {
     // Maximium value of an array
@@ -68,10 +94,16 @@ int main()
     // cout << linearSearch(arr, 5, 606);
 
     // swapAlternatives
-    int arr[6] = {1, 2, 3, 4, 5, 6};
-    swapAlternative(arr, 6);
-    for (int i = 0; i < 6; i++)
-    {
-        cout << arr[i] << endl;
-    }
+    // int arr[6] = {1, 2, 3, 4, 5, 6};
+    // swapAlternative(arr, 6);
+    // for (int i = 0; i < 6; i++)
+    // {
+    //     cout << arr[i] << endl;
+    // }
+
+    // Binary Search
+
+    int arr[6] = {1, 5, 7, 9, 22, 67};
+    int ans = binarySearch(arr, 6, 67);
+    cout << ans << endl;
 }

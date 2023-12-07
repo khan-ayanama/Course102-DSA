@@ -33,13 +33,11 @@ int power(int n)
 
 int main()
 {
-    // RECURSION
-    // When a function call's itself
-
-    // Base Case --> Where you want to stop
-
-    // Segmentation Fault
-    // this happens when a program tries to read from or write to a memory address that it doesn't have permission to access
+    // THEORY:-
+    // Recursion: When Function call's itself
+    // Usage: When Big and Complex problem depends upon small problem then we use recursion.
+    // Base Case: Where you want to stop the program
+    // Segmentation Fault: this happens when a program tries to read from or write to a memory address that it doesn't have permission to access
 
     // Tail Recursion
     /*
@@ -51,13 +49,13 @@ int main()
      */
 
     // Head Recursion
-    /**
+    /*
      * Function(){
      *  * BASE CASE
      *  * RECURSIVE RELATION (Recursive Relation before processing)
      *  * PROCESSING
      * }
-     */
+    */
 
     // Printing factorial
     // int n = 5;

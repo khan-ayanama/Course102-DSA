@@ -1,54 +1,31 @@
 #include <iostream>
 using namespace std;
-int main(){
-    // SWITCH STATEMENT
-    // int number = 13;
+int main()
+{
+    int amount = 1330;
+    int Rs100, Rs50, Rs20, Rs1;
 
-    // switch (number)
-    // {
-    // case 1:
-    //     cout<<"Number is One"<<endl;
-    //     break;
-    // case 2:
-    //     cout<<"Number is Two"<<endl;
-    //     break;
-    // case 3:
-    //     cout<<"Number is Three"<<endl;
-    //     break;
-    // case 4:
-    //     cout<<"Number is Four"<<endl;
-    //     break;
-    
-    // default:
-    //     cout<<"Invalid Entry"<<endl;
-    //     break;
-    // }
-
-    // Total Minimium Notes in sum Total of sumTotal
-    int sumTotal = 1330;
-    switch (sumTotal)
+    switch (1)
     {
-    case 1330:
-        cout<<"Total number of Notes of 500 is "<<sumTotal/500<<endl;
-        sumTotal = sumTotal%500;
+    case 1:
+        Rs100 = amount / 100;
+        amount = amount % 100;
+        cout << "No of 100 Rupee =" << Rs100 << endl;
+
     case 2:
-        cout<<"Total number of Notes of 200 is "<<sumTotal/200<<endl;
-        sumTotal = sumTotal % 200;
+        Rs50 = amount / 50;
+        amount = amount % 50;
+        cout << "No of 50 Rupee =" << Rs50 << endl;
+
     case 3:
-        cout<<"Total number of Notes of 100 is "<<sumTotal/100<<endl;
-        sumTotal = sumTotal % 100;
+        Rs20 = amount / 20;
+        amount = amount % 20;
+        cout << "No of 20 Rupee =" << Rs20 << endl;
+
     case 4:
-        cout<<"Total number of Notes of 50 is "<<sumTotal/50<<endl;
-        sumTotal = sumTotal % 50;
-    case 5:
-        cout<<"Total number of Notes of 20 is "<<sumTotal/20<<endl;
-        sumTotal = sumTotal % 20;
-    case 6:
-        cout<<"Total number of Notes of 10 is "<<sumTotal/10<<endl;
-        break;
-    
-    default:
-        cout<<"Invalid Data"<<endl;
-        break;
+        Rs1 = amount / 1;
+        amount = amount % 1;
+        cout << "No of 1 Rupee =" << Rs1 << endl;
     }
+    return 0;
 }

@@ -10,7 +10,7 @@ int main()
 
     // Big O notation ---> Upper Bound
     // Theta notation ----> Average complexity
-    // Omega notation ----> Lower bouond
+    // Omega notation ----> Lower bound
 
     // BIG O NOTATION
     // 1.Constant time ---> O(1)

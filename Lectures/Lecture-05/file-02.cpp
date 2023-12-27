@@ -14,7 +14,7 @@ int main(){
 
    // Decrement
     /***
-     * POST Decremtn
+     * POST Decrement
      * Method-1: i = i-1
      * Method-2: i -= 1
      * Method-3: i--

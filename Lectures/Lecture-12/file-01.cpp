@@ -36,8 +36,8 @@ int main()
     // Binary search only applies on monotonic function
 
     // 1.Binary search example
-    // int even[6] = {2, 4, 6, 8, 12, 18};
-    // int odd[5] = {3, 8, 11, 14, 16};
-    // int index = binarySearch(even, 6, 18);
-    // cout << "index is " << index;
+    int even[6] = {2, 4, 6, 8, 12, 18};
+    int odd[5] = {3, 8, 11, 14, 16};
+    int index = binarySearch(even, 6, 18);
+    cout << "index is " << index;
 }

@@ -8,8 +8,8 @@ int main()
 
     // Adress of first block of array
 
-    // cout << "Address of rist memory block of array is " << arr << endl;
-    // cout << "Address of rist memory block of array is " << &arr[0] << endl;
+    // cout << "Address of first memory block of array is " << arr << endl;
+    // cout << "Address of first memory block of array is " << &arr[0] << endl;
 
     // *arr --> Gives the value at first block of an array
 
@@ -18,6 +18,7 @@ int main()
 
     // *(arr+1) -> value at 1st location
 
+    // cout << "Operation on location " << (arr + 1) << endl;
     // cout << "Value at 1st location " << *(arr + 1) << endl;
 
     // FORMULA: arr[i] = *(arr + i)
@@ -33,7 +34,7 @@ int main()
 
     // int *p = arr;
     // int *q = &arr[1];
-    // cout << "Prining array when it is assigned directly to arr" << *p << endl;
+    // cout << "Prining array when it is assigned directly to arr " << *p << endl;
     // cout << "Prining array when it is assigned  to arr[1] " << *q << endl;
 
     // If cout<<arr<<endl: gives the address then why cout<<sizeof(arr) gives the size of an array instead of the size of location where address is stored
@@ -44,7 +45,7 @@ int main()
 
     // int *ptr = &temp[0];
 
-    // cout << "size of address " << sizeof(ptr) << endl;
+    // cout << "size of address of pointer " << sizeof(ptr) << endl;
     // cout << "Size of value referencing by address " << sizeof(*ptr) << endl;
     // cout << "size of an address of pointer " << sizeof(&ptr) << endl;
 
@@ -53,7 +54,7 @@ int main()
 
     // DIFFERENCE PART - 02
 
-    // int a[20] = {1, 2, 3, 4, 5};
+    int a[20] = {1, 2, 3, 4, 5};
 
     // cout << &a[0] << endl;
     // cout << &a << endl;
@@ -66,6 +67,8 @@ int main()
     // cout << p << endl;
     // cout << *p << endl;
     // cout << &p << endl;
+
+    // cout << p << " - " << &p << endl;
 
     // Content of symbol table can't be changed
     // What is Symbol Table

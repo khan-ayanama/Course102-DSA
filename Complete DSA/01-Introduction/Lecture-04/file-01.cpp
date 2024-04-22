@@ -15,6 +15,20 @@ int main()
         
     // }
 
+    // int num2 =  3;
+
+    // for (int i = 1; i <= num2; i++)
+    // {
+    //     for (int j = 1; j <= num2*num2; j++)
+    //     {
+    //         cout<<j<<" ";
+    //         if((j*j)%3==0) cout<<endl;
+    //     }cout<<endl;
+        
+    // }
+    
+
+
     // Pattern-02
     // int num = 3;
     // int count = 1;
@@ -41,6 +55,37 @@ int main()
     //     cout<<endl;
         
     // }
+    
+    // Last Pattern
+    int num = 5;
+
+    for (int i = 1; i <= num; i++)
+    {
+        for (int j = 1; j <= num-i+1; j++)
+        {
+            cout<<j<<" ";
+        }
+
+        for (int k = 1; k <= i-1; k++)
+        {
+            cout<<"* ";
+        }
+
+        
+        for (int k = 1; k <= i-1; k++)
+        {
+            cout<<"* ";
+        }
+
+
+        for (int j = 1; j <= num-i+1; j++)
+        {
+            cout<<num-j+1<<" ";
+        }
+        cout<<endl;
+        
+        
+    }
     
     
 }

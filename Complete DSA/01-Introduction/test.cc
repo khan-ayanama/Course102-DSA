@@ -2,34 +2,24 @@
 #include <math.h>
 using namespace std;
 
+int myFunc1(int num){
+    return num+1;
+}
+
+void myFunc2(int* num){
+    *num -=1;
+}
+
 int main()
 {
-    // int decimalNumber = 5;
-    // int binaryDigit = 0;
-    // int i = 0;
+    // pass by value
+    int a = 5;
+    int ans1 = myFunc1(a);
+    cout<<"Value of a: "<<a<<endl;
+    cout<<"Value of ans1: "<<ans1<<endl;
 
-    // while (decimalNumber)
-    // {
-    //     int bit = decimalNumber & 1;
-
-    //     binaryDigit = bit * pow(10, i) + binaryDigit;
-    //     i++;
-    //     decimalNumber = decimalNumber >> 1;
-    // }
-    // cout << "Binary Conversion is: " << binaryDigit << endl;
-
-    // Binary to Decimal
-    int binaryDigit = 1010;
-    int decimalNumber = 0;
-    int i = 0;
-    while (binaryDigit)
-    {
-        int lastDigit = binaryDigit % 10;
-
-        decimalNumber = lastDigit * pow(2, i) + decimalNumber;
-        binaryDigit = binaryDigit / 10;
-        i++;
-    }
-
-    cout << "Decimal Number: " << decimalNumber << endl;
+    // Pass by Pointer
+    int b = 5;
+    myFunc2(&b);
+    cout<<"Value of b: "<<b<<endl;
 }

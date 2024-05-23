@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-// Finding wheter number is odd or not
+// Finding whether number is odd or not
 void isOdd(int n)
 {
     if (n % 2 == 0)

@@ -28,4 +28,9 @@ int main()
     {
         cout << arr[i] << " ";
     }
+
+    // Bubble Sort puts largest element in the first round and after that it follows same trend.
+    // Space Complexity -> O(1)
+    // Time Complexity -> O(n^2)
+    // Stable Algorithm
 }

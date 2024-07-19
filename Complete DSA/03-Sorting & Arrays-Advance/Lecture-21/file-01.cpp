@@ -105,4 +105,7 @@ int main()
     {
         cout << ans[i] << " ";
     }
+
+    
+    
 }

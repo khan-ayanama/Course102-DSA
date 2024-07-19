@@ -32,6 +32,12 @@ void dummy(int n)
     n++;
     cout << " n is " << n << endl;
 }
+
+// Pass by reference
+void updateNumber(int &n){
+    n++;
+    cout<<"updated number: "<<n<<endl;
+}
 int main()
 {
     // ##########################   FUNCTIONS    ##########################

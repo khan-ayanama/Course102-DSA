@@ -28,6 +28,8 @@ int duplicateInArray(int arr[],int size){
 }
 
 
+
+
 int main(){
     // Unique Element of an Array
     int arr1[7] = {1,2,3,4,4,2,1};

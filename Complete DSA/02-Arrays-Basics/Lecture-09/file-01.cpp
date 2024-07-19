@@ -19,7 +19,8 @@ int main(){
 
     // 3. Declaration of an array by initializing elements
     int arr3[] = {15, 25, 35, 45, 55};
-    // In the above code, the compiler creates an array of size 5. The Elements of the array are {15, 25, 35, 45, 55}.
+    cout<<"Size of arr3: "<<sizeof(arr3)<<endl;
+    // In the above code, the compiler creates an array of size 5*4=20. The Elements of the array are {15, 25, 35, 45, 55}.
 
 
     // 4. Declaration of an array by specifying the size and initializing elements

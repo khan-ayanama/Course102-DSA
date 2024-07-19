@@ -4,7 +4,7 @@ int main()
 {
     // TIME AND SPACE COMPLEXITY PART-1
 
-    // Time complexity --> IT is the amount of time taken by an algorithm to run as a funciton of length of the input
+    // Time complexity --> It is the amount of time taken by an algorithm to run as a funciton of length of the input
 
     // It is used to for making better programs or comparison of Algorithm
 
@@ -36,5 +36,5 @@ int main()
 
     // #################    SPACE COMPLEXITY    ############
     // 1. O(1)
-    // 2.O(n)
+    // 2. O(n)
 }

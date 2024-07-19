@@ -128,10 +128,10 @@ int main()
     // }
 
     // Sort 0, 1 & 2
-    int number[7] = {2, 1, 0, 2, 0, 1, 1};
-    sortSpecificValues(number, 7);
-    for (int i = 0; i < 7; i++)
-    {
-        cout << number[i] << ", ";
-    }
+    // int number[7] = {2, 1, 0, 2, 0, 1, 1};
+    // sortSpecificValues(number, 7);
+    // for (int i = 0; i < 7; i++)
+    // {
+    //     cout << number[i] << ", ";
+    // }
 }

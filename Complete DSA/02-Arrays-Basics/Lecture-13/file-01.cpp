@@ -81,16 +81,16 @@ int peakIndex(int arr[], int size)
 int main()
 {
     // First and Last Occurence
-    // int arr[7] = {0, 1, 2, 4, 4, 4, 7};
+    int arr[7] = {0, 1, 2, 4, 4, 4, 7};
 
-    // int first = firstOccurence(arr, 7, 2);
-    // cout << "First: " << first << endl;
+    int first = firstOccurence(arr, 7, 2);
+    cout << "First: " << first << endl;
     // int last = lastOccurence(arr, 7, 2);
     // cout << "Last: " << last << endl;
 
     // Peak Index of Mountain Array
-    int arr[7] = {1, 3, 5, 7, 9, 1, 0};
+    // int arr[7] = {1, 3, 5, 7, 9, 1, 0};
 
-    int ans = peakIndex(arr, 7);
-    cout << "Peak: " << ans << endl;
+    // int ans = peakIndex(arr, 7);
+    // cout << "Peak: " << ans << endl;
 }

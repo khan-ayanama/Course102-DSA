@@ -15,5 +15,13 @@ int main()
     double area = PI*radius*radius;
     cout<<"Area: "<<area<<endl;
 
-    
+    // Homework --> READ GFG MACRO ARTICLE
+
+    // GLOBAL VARIABLE
+    // Bad practice
+
+    // Inline functions
+    // They are used to reduce the function calls overhead
+
+    // Const variable
 }

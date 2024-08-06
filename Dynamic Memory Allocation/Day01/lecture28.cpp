@@ -14,7 +14,7 @@ int main()
 
     // How to assign different names to same variable
 
-    int i = 5;
+    // int i = 5;
 
     // Create refeference variable
 

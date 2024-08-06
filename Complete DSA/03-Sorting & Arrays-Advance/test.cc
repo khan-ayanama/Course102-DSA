@@ -18,11 +18,6 @@ void insertionSort(int arr[], int size)
                 break;
             }
         }
-        for (int k = 0; k < 7; k++)
-        {
-            cout << arr[k] << " ";
-        }
-        cout << endl;
 
         arr[j + 1] = temp;
     }

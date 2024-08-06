@@ -22,4 +22,6 @@ int main()
     cout << &i << endl;
     cout << p << endl;
     cout << *p2 << endl;
+    cout << "Size: " << sizeof(p2) << endl;
+    cout << "Size: " << sizeof(p) << endl;
 }

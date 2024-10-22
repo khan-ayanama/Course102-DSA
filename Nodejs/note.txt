@@ -1,0 +1,12 @@
+10:00 - 02:00 --> Frontend Topics
+02:00 - 03:00 --> JS + CSS
+
+03:00 - 06:00 --> Docker + Linux
+
+07:00 - 10:00 --> DSA + Linux
+10:00 - 12:00 --> English Gramamr + Speaking
+
+12:00 - 02:00 --> DBMS + Mathematics + Python
+
+02:00 - 06:00 --> Backend + Linux
+

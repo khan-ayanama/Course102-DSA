@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 int main()
@@ -6,18 +6,17 @@ int main()
     // PRINTING PATTERN OF STARS
     int num = 4;
     int i = 0;
-    while (i<num)
+    while (i < num)
     {
         int j = 0;
-        while (j<num)
+        while (j < num)
         {
-            cout<<"* ";
+            cout << "* ";
             j++;
         }
-        cout<<endl;
+        cout << endl;
         i++;
     }
-    
 
     return 0;
 }

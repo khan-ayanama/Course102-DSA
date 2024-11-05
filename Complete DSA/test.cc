@@ -1,164 +1,98 @@
 #include <iostream>
+#include <stack>
 using namespace std;
 
-class Node
+class Stack
 {
 public:
-    int data;
-    Node *next;
+    int *arr;
+    int top;
+    int size;
 
-    // constructor
-    Node(int data)
+    Stack(int size)
     {
-        this->data = data;
-        this->next = NULL;
+        this->size = size;
+        arr = new int[size];
+        top = -1;
     }
-    ~Node()
-    {
-        int value = this->data;
 
-        // Memory free
-        if (this->next != NULL)
+    void push(int element)
+    {
+        if ((size - top) > 1)
         {
-            delete this->next;
-            this->next = NULL;
-        }
-
-        cout << "Node deleted of data: " << value << endl;
-    }
-};
-
-void insertAtHead(Node *&head, int data)
-{
-    Node *temp = new Node(data);
-    temp->next = head;
-    head = temp;
-}
-
-void insertAtTail(Node *&tail, int data)
-{
-    Node *temp = new Node(data);
-    tail->next = temp;
-    tail = temp;
-}
-
-void insertAtPosition(Node *&tail, Node *&head, int position, int data)
-{
-
-    // Inserting at head
-    if (position == 1)
-    {
-        insertAtHead(head, data);
-        return;
-    }
-
-    int count = 1;
-
-    Node *temp = head;
-
-    while (count < position - 1)
-    {
-        if (temp->next == NULL)
-        {
-            cout << "Cannot ADD" << endl;
-            break;
-        }
-        temp = temp->next;
-        count++;
-    }
-
-    if (temp->next == NULL)
-    {
-        insertAtTail(tail, data);
-        return;
-    }
-
-    // Creating node to insert
-    Node *nodeToInsert = new Node(data);
-    nodeToInsert->next = temp->next;
-    temp->next = nodeToInsert;
-}
-
-void deleteNode(int position, Node *&head, Node *&tail)
-{
-    if (position == 1)
-    {
-        Node *temp = head;
-        head = head->next;
-        // temp->next = NULL;
-        delete temp;
-    }
-    else
-    {
-        Node *curr = head;
-        Node *prev = NULL;
-
-        int count = 1;
-        while (count < position)
-        {
-            prev = curr;
-            curr = curr->next;
-            count++;
-        }
-
-        if (curr->next == NULL)
-        {
-            tail = prev;
-            prev->next = NULL;
-            delete curr;
+            top++;
+            arr[top] = element;
         }
         else
         {
-            prev->next = curr->next;
-            curr->next = NULL;
-            delete curr;
+            cout << "Stack overflow" << endl;
         }
     }
-}
 
-void print(Node *&head)
-{
-    Node *temp = head;
-    while (temp != NULL)
+    void pop()
     {
-        cout << temp->data << " ";
-        temp = temp->next;
+        if (top >= 0)
+        {
+            top--;
+        }
+        else
+        {
+            cout << "Stack is already empty" << endl;
+        }
     }
-    cout << endl;
-}
 
+    int peak()
+    {
+        if (top >= 0)
+        {
+            return arr[top];
+        }
+        else
+        {
+            cout << "Array is empty" << endl;
+        }
+    }
+
+    bool isEmpty()
+    {
+        if (top == -1)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+};
 int main()
 {
+    // Stack
 
-    Node *node1 = new Node(5);
-    // cout << node1->data << endl;
-    // cout << node1->next << endl;
-    // cout << endl;
+    stack<int> s1;
 
-    // Inserting at Tail
-    Node *tail = node1;
-    insertAtTail(tail, 6);
-    insertAtTail(tail, 7);
+    cout << s1.empty() << endl;
 
-    // Inserting at Head
-    Node *head = node1;
-    insertAtHead(head, 2);
-    insertAtHead(head, 1);
+    // Adding value inside stack
+    s1.push(2);
+    s1.push(89);
+    s1.push(32);
 
-    // Inserting at postion
-    insertAtPosition(tail, head, 3, 3);
+    // Is Stack empty
+    cout << s1.empty() << endl;
 
-    // When position is greater than the size of tail it will add at last
-    insertAtPosition(tail, head, 4, 4);
+    cout << s1.top() << endl;
+    cout << s1.size() << endl;
 
-    cout << "printing Linked List" << endl;
-    print(head);
+    Stack s2(5);
 
-    deleteNode(1, head, tail);
+    s2.push(2);
+    s2.push(2);
+    s2.push(2);
+    s2.push(2);
+    s2.push(12);
 
-    cout << "Printing rest of list" << endl;
-    print(head);
-
-    // cout << "tail " << tail->data << endl;
-    // cout << "tail " << head->data << endl;
+    cout << s2.peak() << endl;
+    s2.pop();
+    cout << s2.peak() << endl;
 }

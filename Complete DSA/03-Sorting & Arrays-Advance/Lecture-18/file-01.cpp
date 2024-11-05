@@ -24,6 +24,8 @@ void insertionSort(int arr[], int size)
         }
         cout << endl;
 
+        cout << "value: " << j << " ";
+
         arr[j + 1] = temp;
     }
 }
@@ -40,21 +42,21 @@ int main()
     }
 
     /*
- * Complexity:
- *  - Time Complexity:
- *    - Best Case: O(n)
- *      When the array is already sorted, insertion sort only needs to pass through the array once.
- *    - Average Case: O(n^2)
- *      On average, insertion sort requires n(n-1)/4 comparisons and shifts, resulting in quadratic time complexity.
- *    - Worst Case: O(n^2)
- *      When the array is sorted in reverse order, insertion sort performs the maximum number of comparisons and shifts.
- *
- *  - Space Complexity:
- *    - Auxiliary Space: O(1)
- *      Insertion sort is an in-place sorting algorithm, requiring a constant amount of additional space.
- *
- * Stability:
- *  - Yes, insertion sort is stable.
- *    It preserves the relative order of records with equal keys (i.e., values).
- */
+     * Complexity:
+     *  - Time Complexity:
+     *    - Best Case: O(n)
+     *      When the array is already sorted, insertion sort only needs to pass through the array once.
+     *    - Average Case: O(n^2)
+     *      On average, insertion sort requires n(n-1)/4 comparisons and shifts, resulting in quadratic time complexity.
+     *    - Worst Case: O(n^2)
+     *      When the array is sorted in reverse order, insertion sort performs the maximum number of comparisons and shifts.
+     *
+     *  - Space Complexity:
+     *    - Auxiliary Space: O(1)
+     *      Insertion sort is an in-place sorting algorithm, requiring a constant amount of additional space.
+     *
+     * Stability:
+     *  - Yes, insertion sort is stable.
+     *    It preserves the relative order of records with equal keys (i.e., values).
+     */
 }
